@@ -15,7 +15,7 @@ body {
   background-image: url("assets/background.jpeg");
   background-position: center;
   background-size: cover;
-  width: clamp(400px, 40vw, 1000px)
+  width: clamp(400px, 40vw, 800px);
 }
 
 .logo {
@@ -55,5 +55,100 @@ footer > a {
 
 footer > a:hover {
   text-decoration: underline;
+}
+
+main {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.signup-header {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px;
+  margin: 24px;
+}
+
+.signup-footer {
+  font-size: 16px;
+  margin: 6px 24px;
+}
+
+.signup-footer > span {
+  color: rgb(69, 104, 18);
+}
+
+.signup-footer > span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+form {
+  margin: 32px 0;
+
+}
+
+.form_body > h1 {
+  font-size: 1.2em;
+  margin: 8px;
+  padding: 0;
+}
+
+button[type="submit"] {
+  background-color: #596D48;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 27px;
+  margin: 24px;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+label {
+  width: min(40%, 400px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: #4f5052
+}
+
+.form_row {
+  display: flex;
+  gap: 32px;
+  margin: 8px;
+}
+
+input {
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+input:focus {
+  outline: none;
+  border-color: blue;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+input.error {
+  border: 1px solid rgb(206, 102, 102);
+}
+
+label > span {
+  color: rgb(206, 102, 102);
+  margin-top: -8px;
+}
+
+.form_body {
+  border: 1px solid #E5E7EB;
+  box-shadow: 0px 5px 10px 0px #E5E7EB;
+  padding: 12px;
 }
 
